@@ -1,0 +1,183 @@
+
+
+html {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    background-color: #09302b;
+}
+
+
+.bg {
+animation:slide 3s ease-in-out infinite alternate;
+background-image: linear-gradient(-60deg, #062223 50%, #09302b 50%);
+bottom:0;
+left:-50%;
+opacity:.5;
+position:fixed;
+right:-50%;
+top:0;
+z-index:-1;
+}
+
+.bg2 {
+animation-direction:alternate-reverse;
+animation-duration:4s;
+}
+
+.bg3 {
+animation-duration:5s;
+}
+
+
+
+h1 {
+    font-family:monospace;
+}
+
+@keyframes slide {
+0% {
+    transform:translateX(-25%);
+}
+100% {
+    transform:translateX(25%);
+}
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 150px;
+}
+
+.join {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.create {
+    width: 100%;
+}
+
+.message-box {
+    box-shadow: 20px 10px 20px #06201d42;
+    border-color: #06201d;
+    border-radius: 10px;
+    background-color: #2b5752;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    align-items: stretch;
+    margin-top: 50px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 25px;
+}
+
+.messages {
+    flex: 1;
+    width: 100%;
+
+}
+
+.inputs {
+    padding: 10px;
+    display: flex;
+
+}
+
+h2 {
+    text-align: center;
+
+}
+
+#message {
+    margin-left: 30%;
+    height: 30px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    outline: none;
+    border: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 35%;
+    font-size: 16px;
+}
+
+#button-send {
+    background-color: rgb(255, 255, 255);
+    outline: none;
+    border: none;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-left: 1px rgb(110, 110, 110) solid;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    padding-right: 10px;
+}
+
+#title {
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+}
+
+#join-room {
+    margin-left: 20px;
+    border-radius: 15px;
+    border: none;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+#enter-name {
+    height: 30px;
+    border-radius: 15px;
+    border: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    outline: none;
+
+}
+
+#enter-room {
+    height: 30px;
+    border-radius: 15px;
+    border: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    outline: none;
+}
+
+#create-btn {
+    height: 30px;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+#chat-room-title {
+    color: aliceblue;
+}
+
+#text-message {
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
